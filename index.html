@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Website</title>
+  <style>
+    /* Reset some default styles */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set up page layout */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .intro-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .intro-section img {
+      max-width: 400px;
+      height: auto;
+    }
+
+    .intro-section .intro-content {
+      flex-grow: 1;
+      padding-left: 40px;
+    }
+
+    .intro-section h2 {
+      font-size: 30px;
+    }
+
+    .intro-section p {
+      margin-bottom: 30px;
+    }
+
+    .intro-section a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .best-selling-section {
+      margin-bottom: 40px;
+    }
+
+    .best-selling-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+    .book {
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .book img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .book h3 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .book p {
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .recommendation-section {
+      margin-bottom: 40px;
+    }
+
+    .recommendation-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .review-section {
+      margin-bottom: 40px;
+    }
+
+    .review-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .review {
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .review p {
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to Book Website</h1>
+    </header>
+
+    <div class="intro-section">
+      <img src="https://png.pngtree.com/png-clipart/20230104/original/pngtree-book-store-banners-with-young-man-and-shelves-with-literature-png-image_8866255.png" alt="Cover Page">
+      <div class="intro-content">
+        <h2>Your Book Shop</h2>
+        <p>Discover the best books and embark on an unforgettable reading journey.</p>
+        <a href="#best-selling-section" class="button">Explore Best Sellers</a>
+      </div>
+    </div>
+
+    <div class="best-selling-section" id="best-selling-section">
+      <h2>Best Selling Books</h2>
+      <div class="book-list">
+        <div class="book">
+          <img src="https://png.pngtree.com/template/20200807/ourmid/pngtree-color-matching-autumn-photography-book-cover-design-image_400413.jpg" alt="Book 1">
+          <h3>Book Title 1</h3>
+          <p>Author: Author 1</p>
+          <p>Price: $10</p>
+        </div>
+        <div class="book">
+          <img src="https://e7.pngegg.com/pngimages/152/107/png-transparent-abstract-green-business-book-cover-page-or-brochure-template.png" alt="Book 2">
+          <h3>Book Title 2</h3>
+          <p>Author: Author 2</p>
+          <p>Price: $15</p>
+        </div>
+        <div class="book">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfMEH7pqPaEVdmYA0sgBtZu6dl1uCydX-Ag&usqp=CAU" alt="Book 3">
+          <h3>Book Title 3</h3>
+          <p>Author: Author 3</p>
+          <p>Price: $12</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="recommendation-section">
+      <h2>Our Recommendations</h2>
+      <div class="book-list">
+        <div class="book">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR54elck2RdC6-it_-KVpebivkjFya0OQR6Iw&usqp=CAU" alt="Book 4">
+          <h3>Book Title 4</h3>
+          <p>Author: Author 4</p>
+          <p>Price: $18</p>
+        </div>
+        <div class="book">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQWLiNGXZks2bnxcf-K1Tht00muzf4GJdTWA&usqp=CAU" alt="Book 5">
+          <h3>Book Title 5</h3>
+          <p>Author: Author 5</p>
+          <p>Price: $20</p>
+        </div>
+        <div class="book">
+          <img src="https://th-i.thgim.com/public/incoming/xshrjz/article66754608.ece/alternates/FREE_1200/Book%20Cover%20slider.png" alt="Book 6">
+          <h3>Book Title 6</h3>
+          <p>Author: Author 6</p>
+          <p>Price: $14</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-section">
+      <h2>Reviews</h2>
+      <div class="review">
+        <p>"This bookshop offers a fantastic selection of books, and their recommendations are always spot on!"</p>
+        <p>- Happy Reader</p>
+      </div>
+      <div class="review">
+        <p>"I love shopping at Your Book Shop. They have the best collection of books, and their service is top-notch!"</p>
+        <p>- Book Lover</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <span>&copy; 2023 Your Book Shop. All rights reserved.</span>
+      </div>
+      <a href="#" class="back-to-top">Back to Top</a>
+    </div>
+  </footer>
+  
+  <style>
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+  
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .social-media {
+      margin-bottom: 10px;
+    }
+  
+    .social-media a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  
+    .footer-links {
+      margin-bottom: 10px;
+    }
+  
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+  
+    .back-to-top {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: opacity 0.3s ease-in-out;
+    }
+  
+    .back-to-top:hover {
+      opacity: 0.7;
+    }
+  </style>
+  
